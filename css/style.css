@@ -61,9 +61,9 @@ header {
     display: grid;
     grid-template-columns: auto;
     grid-template-areas: "cero cero cero cero"
-        "nos nos nos nos"
-        "foto foto foto foto"
-        "consejos consejos consejos consejos";
+                         "nos nos nos nos"
+                         "foto foto foto foto"
+                         "consejos consejos consejos consejos";
 }
 
 .cero {
@@ -295,7 +295,6 @@ footer {
 
 /*contacto html*/
 
-
 .bodyContactos{
     background-image: url(../img/tattoo1.jpg);
     background-repeat: no-repeat;
@@ -303,75 +302,115 @@ footer {
     background-position: center;
 }
 
-form h3{
-    color: #fff;
-    margin: 0 11rem;
-    border-radius: 10px;
+form h2{
+    color: #fff;    
+    text-align: center;
 }
 
 iframe{
     display: none;
 }
+
 form {
     padding-top: 2rem;
     text-align: center;
     position: relative;
-    background: rgba(0,0,0,.4);
 }
 
-fieldset {
-    border: none;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    position: relative;
-    z-index: 0;
+input[type="text"] {
+    font: 1rem/2rem 'Muli', sans-serif;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
 }
 
-input {
-    padding: 10px;
-    width: 350px;
-    margin: 10px;
-    border: 0;
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.06);
-    border-radius: 10px;
+input[type="email"] {
+    font: 1rem/2rem 'Muli', sans-serif;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+input[type="tel"] {
+    font: 1rem/2rem 'Muli', sans-serif;
+    width: 100%;
+    letter-spacing: 1px;
 }
 
 textarea {
-    padding: 10px;
-    width: 350px;
-    margin: 10px;
-    resize: vertical;
-    border-radius: 15px;
-    border: 0;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+    font: 1rem/2rem 'Muli', sans-serif;
+    color: #fff;
+    width: 100%;
     height: 150px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+:focus {
+    outline: none;
+}
+
+.form {
+    display: flex;
+    margin: 40px 3%;
+    position: relative;
+}
+
+.effect {
+    border: 0;
+    padding: 4px 0;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+}
+
+.border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #301B3F;
+    transition: 0.4s;
+}
+
+.effect:focus~.border,
+.has-content.effect~.border {
+    width: 100%;
+    transition: 0.4s;
+}
+
+label {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    color: #fff;
+    transition: 0.3s;
+    z-index: -1;
+    letter-spacing: 0.5px;
+}
+
+.effect:focus~label,
+.has-content.effect~label {
+    top: -16px;
+    font-size: 12px;
+    color: #301B3F;
+    transition: 0.3s;
 }
 
 input[type=submit] {
+    margin: 0 2% 10% 2%;
     padding: 10px;
-    width: 170px;
+    width: 80%;
     border: 0;
     box-shadow: 0 0 15px 5px rgba(49, 46, 46, 0.06);
     border-radius: 10px;
 }
 
 input[type=submit]:hover {
-    background-color: #676968;
+    background-color: #301B3F;
     color: #fff;
 }
 
-input[type=reset] {
-    padding: 10px;
-    width: 170px;
-    border: 0;
-    box-shadow: 0 0 15px 5px rgba(49, 46, 46, 0.06);
-    border-radius: 10px;
-}
-
-input[type=reset]:hover {
-    background-color: #676968;
-    color: #fff;
-}
 
 
 
@@ -457,10 +496,8 @@ input[type=reset]:hover {
     form {
         display: flex;
         flex-direction: wrap;
-        justify-content: end;
-        gap: 100px;
+        justify-content: start;
         position: relative;
-        
     }
     
     iframe {
@@ -478,62 +515,27 @@ input[type=reset]:hover {
         filter: none;
     }
     
-    fieldset {
+    .formulario {
         border: none;
-        margin-bottom: 5%;
-        margin-top: 5%;
+        margin-bottom: 0%;
+        margin-top: 1%;
         position: relative;
         z-index: 0;
+        width: 30%;
     }
     
-    input {
-        padding: 10px;
-        width: 350px;
-        margin: 10px;
-        border: 0;
-        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.06);
-        border-radius: 10px;
-    }
-    
-    textarea {
-        padding: 10px;
-        width: 350px;
-        margin: 10px;
-        resize: vertical;
-        border-radius: 15px;
-        border: 0;
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
-        height: 150px;
-    }
-    
-    input[type=submit] {
-        padding: 10px;
-        width: 170px;
-        border: 0;
-        box-shadow: 0 0 15px 5px rgba(49, 46, 46, 0.06);
-        border-radius: 10px;
-    }
-    
-    input[type=submit]:hover {
-        background-color: #3C415C;
-        color: #fff;
-    }
-    
-    input[type=reset] {
-        padding: 10px;
-        width: 170px;
-        border: 0;
-        box-shadow: 0 0 15px 5px rgba(49, 46, 46, 0.06);
-        border-radius: 10px;
-    }
-    
-    input[type=reset]:hover {
-        background-color: #3C415C;
-        color: #fff;
+    form h2{
+        display: none;
     }
 
-    form h3{
-        display: none;
+    .form{
+        margin: 10%;
+        width: 100%;
+    }
+
+    input[type=submit] {
+        margin-left: 10%;
+        width: 100%;
     }
 
 }
