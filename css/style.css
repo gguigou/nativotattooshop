@@ -12,45 +12,14 @@ body {
 .bodyIndex {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.1fr 0.05fr auto 0.5fr;
-    grid-template-areas: "header header header header"
-                         "navbar navbar navbar navbar"
+    grid-template-rows: auto auto 0.1fr;
+    grid-template-areas: "header header header header" 
                          "main main main main"
                          "footer footer footer footer";
 }
 
 header {
-    grid-area: header;
-    background-color: black;
-}
-
-.logo {
-    text-align: center;
-    margin-top: 0.5rem;
-}
-
-.navbar {
-    grid-area: navbar;
-    background: black;
-    margin-top: -0.1rem;
-}
-
-.navbar ul {
-    background-color: black;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    margin: 0.3rem;
-    padding: 0;
-}
-
-.navbar ul li a {
-    display: block;
-    text-decoration: none;
-    text-decoration-color: #fff;
-    color: #fff;
-    font-size: 1.2rem;
-
+    grid-area: header;    
 }
 
 .mainNosotros {
@@ -202,6 +171,8 @@ footer a {
     color: #fff;
 }
 
+
+
 .column {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -234,20 +205,16 @@ footer h4 {
 
 body {
     display: grid;
+    height: 100vh;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.1fr 0.05fr auto 0.5fr;
+    grid-template-rows: 0.1fr auto 0.5fr;
     grid-template-areas: "header header header header"
-        "navbar navbar navbar navbar"
         "mainT mainT mainT mainT"
         "footer footer footer footer";
 }
 
 header {
     grid-area: header;
-}
-
-.navbar {
-    grid-area: navbar;
 }
 
 main {
@@ -540,42 +507,11 @@ input[type=submit]:hover {
 
 @media screen and (min-width:1260px) {
 
-    .logo {
-        margin: 0.7rem;
-        background-color: black;
-        position: sticky;
-        position: fixed;
-        z-index: 2;
-    }
 
-    header .navbar {
-        margin: 0px;
-        padding: 0px;
-        background-color: black;
-        position: fixed;
-        text-align: right;
-        z-index: 1;
-    }
 
-    .navbar {
-        margin: 0;
-        padding: 0px 20px;
-        background-color: black;
-        top: 0px;
-        position: sticky;
-        z-index: 1;
-    }
-
-    .navbar ul {
-        justify-content: flex-end;
-    }
-
-    .navbar ul li {
-        margin: 1rem;
-    }
 
     .navbar ul li a {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         position: relative;
     }
 
