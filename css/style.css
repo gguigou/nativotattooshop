@@ -5,14 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    height: inherit;
-}
-
 .bodyIndex {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto 0.1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: "header header header header" 
                          "main main main main"
                          "footer footer footer footer";
@@ -42,7 +38,6 @@ header {
     padding: 6vh 0;
     display: flex;
     align-items: center;
-
 }
 
 .uno {
@@ -85,6 +80,10 @@ header {
     background-color: rgba(0, 0, 0, 0.925);
     color: #fff;
     padding: 2.5rem 1rem;
+}
+
+.artistas{
+    flex-wrap: wrap;
 }
 
 .nosotros h2 span {
@@ -145,20 +144,13 @@ footer {
     background-image: url(../img/tattoo4.jpg);
     background-position: center;
     background-size: cover;
-    padding-top: 3%;
+    padding-top: 1%;
 }
 
 .logoFooter {
     display: none;
 }
 
-footer h4 {
-    text-align: center;
-    font-size: 1rem;
-    font-weight: lighter;
-    padding-bottom: 1%;
-    padding-top: 10%;
-}
 
 footer p {
     color: #fff;
@@ -171,25 +163,23 @@ footer a {
     color: #fff;
 }
 
-
-
-.column {
+.columna {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "column2 column2 column2 column2";
+    grid-template-areas: "columna2 columna2 columna2 columna2";
     background-color: rgba(0, 0, 0, .4);
 }
 
-.column1 {
+.columna1 {
     display: none;
 }
 
-.column2 {
-    grid-area: column2;
-    padding: 5%;
+.columna2 {
+    grid-area: columna2;
+    padding: 2%;
 }
 
-.column3 {
+.columna3 {
     display: none;
 }
 
@@ -197,8 +187,10 @@ footer h4 {
     text-align: center;
     font-size: 0.8rem;
     font-weight: lighter;
-    padding-top: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     color: #fff;
+    background-color: black;
 }
 
 /*grid html pages*/
@@ -231,7 +223,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: columna;
 }
 
 .container-tattoo {
@@ -247,7 +239,7 @@ footer {
     border: 1px solid black;
     width: 20rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: columna;
     justify-content: center;
     align-items: center;
 }
@@ -382,6 +374,10 @@ input[type=submit]:hover {
 
 @media screen and (min-width:720px) {
 
+    .artistas{
+        flex-wrap: nowrap;
+    }
+
     .uno h1 {
         font-size: 2.5rem;
     }
@@ -410,13 +406,8 @@ input[type=submit]:hover {
     }
 
     .nosotros p {
-        padding: 1rem 3rem;
+        padding: 0.5rem 1rem;
         text-align: justify;
-    }
-
-    .nosotrosPc {
-        display: block;
-        padding-top: 0.3rem;
     }
 
     #fotoTatuadores {
@@ -505,6 +496,22 @@ input[type=submit]:hover {
 
 }
 
+@media screen and (min-width:920px) {
+
+    .nosotrosPc {
+        display: block;
+        padding-top: 0.3rem;
+    }
+
+    .nosotrosTexto {
+        font-size: 1.2rem;
+    }
+
+    .nosotrosCel {
+        font-size: 1.2rem;
+    }
+}
+
 @media screen and (min-width:1260px) {
 
 
@@ -551,6 +558,7 @@ input[type=submit]:hover {
     .dos:hover{
         background-color: #301B3F;
         border: none;
+        color: #fff;
     }
 
     /* social */
@@ -579,6 +587,10 @@ input[type=submit]:hover {
 
     /* nosotros */
 
+    .nosotros p {
+        padding: 0.5rem 3rem;
+    }
+
     .nosotros h2 span {
         display: block;
         display: inline-block;
@@ -606,10 +618,6 @@ input[type=submit]:hover {
         font-size: 1.5rem;
     }
 
-    .consejos {
-        margin-bottom: -2.7rem;
-    }
-
     .consejos p {
         font-size: 1.5rem;
     }
@@ -617,7 +625,7 @@ input[type=submit]:hover {
     /*footer*/
 
     footer{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .logoFooter {
@@ -625,43 +633,43 @@ input[type=submit]:hover {
         margin: 0.3rem;
     }
 
-    .column {
+    .columna {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "column1 column2 column3";
+        grid-template-areas: "columna1 columna2 columna3";
     }
 
-    .column1 {
+    .columna1 {
         display: block;
-        grid-area: column1;
+        grid-area: columna1;
         margin: 4% 20%;
     }
 
-    .column1 ul li {
+    .columna1 ul li {
         list-style-type: none;
     }
 
-    .column1 ul li a {
+    .columna1 ul li a {
         text-decoration: none;
         text-decoration-color: #fff;
     }
 
-    .column1 ul li a:hover{
+    .columna1 ul li a:hover{
         color: #B4A5A5;
     }
 
-    .column2 a:hover{
+    .columna2 a:hover{
         color: #B4A5A5;
     }
 
-    .column3 {
+    .columna3 {
         display: block;
-        grid-area: column3;
+        grid-area: columna3;
         text-align: center;
         padding-top: 5%;
     }
 
-    .column3 input {
+    .columna3 input {
         padding: 0.5rem;
         width: 19.5rem;
         margin: 0.5rem;
@@ -670,7 +678,7 @@ input[type=submit]:hover {
         border-radius: 10px;
     }
 
-    .column3 input[type=submit] {
+    .columna3 input[type=submit] {
         padding: 0.5rem;
         width: 19.5rem;
         border: 0;
@@ -678,7 +686,7 @@ input[type=submit]:hover {
         border-radius: 10px;
     }
 
-    .column3 input[type=submit]:hover {
+    .columna3 input[type=submit]:hover {
         background-color: #301B3F;
         color: #fff;
     }
