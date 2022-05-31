@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+.bodyIndex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+
+header {
+  grid-area: header; }
+
+.mainNosotros {
+  grid-area: main; }
+  .mainNosotros .cuerpo {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "cero cero cero cero" "nos nos nos nos" "foto foto foto foto" "consejos consejos consejos consejos"; }
+    .mainNosotros .cuerpo .cero {
+      grid-area: cero;
+      background-image: url(../img/tattoo1.jpg);
+      background-size: cover;
+      padding: 6vh 0;
+      display: flex;
+      align-items: center; }
+      .mainNosotros .cuerpo .cero .uno {
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        padding: 4%;
+        line-height: 1;
+        background-color: rgba(0, 0, 0, 0.4); }
+        .mainNosotros .cuerpo .cero .uno h1 {
+          font-size: 1.5rem;
+          font-weight: 100; }
+        .mainNosotros .cuerpo .cero .uno .dos {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid;
+          margin-top: 1rem;
+          padding: 10px 30px;
+          border-radius: 5px;
+          text-decoration: none;
+          text-align: center;
+          font-size: 1.5rem;
+          background-color: rgba(0, 0, 0, 0.4);
+          cursor: pointer;
+          border-color: #fff;
+          color: #fff; }
+
+.social {
+  display: none; }
+
+.artistas {
+  flex-wrap: wrap; }
+  .artistas .nosotros {
+    grid-area: nos;
+    background-color: rgba(0, 0, 0, 0.925);
+    color: #fff;
+    padding: 2.5rem 1rem; }
+    .artistas .nosotros h2 span {
+      display: none; }
+    .artistas .nosotros .nosotrosTexto {
+      margin-top: 0.5rem; }
+      .artistas .nosotros .nosotrosTexto .nosotrosPc {
+        display: none; }
+    .artistas .nosotros .nosotrosCel {
+      margin-top: 0.5rem; }
+
+.consejos {
+  grid-area: consejos;
+  background-color: rgba(0, 0, 0, 0.925);
+  color: #fff;
+  padding: 1.5rem 1rem; }
+  .consejos p {
+    margin-top: 0.5rem; }
+
+footer {
+  grid-area: footer;
+  color: white;
+  background-image: url(../img/tattoo4.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 1%;
+  margin-bottom: -2%; }
+  footer .logoFooter {
+    display: none; }
+  footer p {
+    color: #fff;
+    text-align: center; }
+  footer a {
+    text-decoration: none;
+    text-decoration-color: #fff;
+    color: #fff; }
+  footer .columna {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "columna2 columna2 columna2 columna2";
+    background-color: rgba(0, 0, 0, 0.4); }
+    footer .columna .columna1 {
+      display: none; }
+    footer .columna .columna2 {
+      grid-area: columna2;
+      padding: 2%; }
+    footer .columna .columna3 {
+      display: none; }
+  footer h4,
+  footer h5 {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #fff;
+    background-color: black; }
+
+.contacto h1 {
+  text-align: center;
+  padding-top: 2rem;
+  font-weight: bolder; }
+
+.contacto .formulario {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px; }
+  .contacto .formulario label {
+    text-align: left;
+    padding: 16px 0 8px 0px; }
+  .contacto .formulario input[type=text],
+  .contacto .formulario [type=tel], .contacto .formulario select {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06); }
+  .contacto .formulario textarea {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+    resize: vertical;
+    height: 200px; }
+  .contacto .formulario input[type=submit] {
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 15px 5px rgba(49, 46, 46, 0.06);
+    background-color: #65328a;
+    color: white;
+    margin: 8px 0; }
+    .contacto .formulario input[type=submit]:hover {
+      background-color: #301B3F; }
+
+.contacto iframe {
+  width: 100%;
+  margin-top: 1rem; }
+
+@media screen and (min-width: 720px) {
+  .cuerpo .cero .uno h1 {
+    font-size: 2.5rem; }
+  .cuerpo .cero .dos span {
+    font-size: 2.5rem; }
+  .cuerpo .social {
+    display: none; }
+  .artistas {
+    flex-wrap: nowrap; }
+    .artistas .nosotros {
+      padding: 2rem; }
+      .artistas .nosotros p {
+        padding: 0.5rem 1rem;
+        text-align: justify; }
+      .artistas .nosotros h2 {
+        text-align: center;
+        padding-bottom: 0.7rem;
+        font-size: 1.8rem; }
+        .artistas .nosotros h2 span {
+          display: block;
+          display: inline-block; }
+  #fotoTatuadores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "diego garo" "gera cami"; }
+    #fotoTatuadores #tatuador1 {
+      grid-area: diego; }
+    #fotoTatuadores #tatuador2 {
+      grid-area: garo; }
+    #fotoTatuadores #tatuador3 {
+      grid-area: gera; }
+    #fotoTatuadores #tatuador4 {
+      grid-area: cami; }
+  .consejos h2 {
+    text-align: center;
+    font-size: 1.8rem; }
+  .consejos p {
+    padding: 2% 4%; }
+  .contacto h1 {
+    display: none; }
+  .formulario {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: start; }
+    .formulario iframe {
+      height: 100vh;
+      width: 100%; }
+      .formulario iframe:hover {
+        filter: grayscale(1); }
+    .formulario form {
+      padding: 20px;
+      width: 60%; }
+      .formulario form input[type=submit]:hover {
+        background-color: #3C415C;
+        color: #fff; } }
+
+@media screen and (min-width: 920px) {
+  .nosotrosTexto {
+    font-size: 1.2rem; }
+    .nosotrosTexto .nosotrosPc {
+      display: block;
+      padding-top: 0.3rem; }
+      .nosotrosTexto .nosotrosPc .nosotrosCel {
+        font-size: 1.2rem; } }
+
+@media screen and (min-width: 1260px) {
+  .navbar ul li a {
+    font-size: 1.3rem;
+    position: relative; }
+    .navbar ul li a:after, .navbar ul li a:before {
+      transition: all .5s; }
+    .navbar ul li a:after, .navbar ul li a:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: #aaa;
+      height: 1px; }
+    .navbar ul li a:hover:after {
+      width: 100%; }
+  .mainNosotros .cuerpo .cero .uno h1 {
+    font-size: 4rem;
+    padding-bottom: 1.2rem; }
+  .mainNosotros .cuerpo .cero .dos span {
+    font-size: 4rem; }
+  .mainNosotros .cuerpo .cero .dos:hover {
+    background-color: #301B3F;
+    border: none;
+    color: #fff; }
+  .mainNosotros .cuerpo .social {
+    display: block; }
+    .mainNosotros .cuerpo .social .facebook {
+      position: fixed;
+      top: 44%;
+      right: 1%; }
+    .mainNosotros .cuerpo .social .instagram {
+      position: fixed;
+      top: 50%;
+      right: 1%; }
+    .mainNosotros .cuerpo .social .whatsapp {
+      position: fixed;
+      top: 56%;
+      right: 1%; }
+  .artistas .nosotros h2 span {
+    display: block;
+    display: inline-block; }
+  .artistas .nosotros p {
+    padding: 0.5rem 3rem; }
+  .artistas .nosotros .nosotrosTexto {
+    font-size: 1.5rem; }
+    .artistas .nosotros .nosotrosTexto .nosotrosPc {
+      display: block; }
+  .artistas .nosotros .nosotrosCel {
+    font-size: 1.5rem; }
+  /*foto tatuadores*/
+  #fotoTatuadores {
+    display: block; }
+  .tatuadores figcaption {
+    font-size: 1.5rem; }
+  .consejos p {
+    font-size: 1.5rem; }
+  /*footer*/
+  footer {
+    font-size: 1.2rem; }
+    footer .logoFooter {
+      display: block;
+      margin: 0.3rem; }
+    footer .columna {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "columna1 columna2 columna3"; }
+      footer .columna .columna1 {
+        display: block;
+        grid-area: columna1;
+        margin: 4% 20%; }
+        footer .columna .columna1 ul li {
+          list-style-type: none; }
+          footer .columna .columna1 ul li a {
+            text-decoration: none;
+            text-decoration-color: #fff; }
+            footer .columna .columna1 ul li a:hover {
+              color: #B4A5A5; }
+      footer .columna .columna2 a:hover {
+        color: #B4A5A5; }
+      footer .columna .columna3 {
+        display: block;
+        grid-area: columna3;
+        text-align: center;
+        padding-top: 5%; }
+        footer .columna .columna3 input {
+          padding: 0.5rem;
+          width: 19.5rem;
+          margin: 0.5rem;
+          border: 0;
+          box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.06);
+          border-radius: 10px; }
+          footer .columna .columna3 input [type=submit] {
+            padding: 0.5rem;
+            width: 19.5rem;
+            border: 0;
+            box-shadow: 0 0 15px 5px rgba(49, 46, 46, 0.06);
+            border-radius: 10px; }
+            footer .columna .columna3 input [type=submit]:hover {
+              background-color: #301B3F;
+              color: #fff; } }

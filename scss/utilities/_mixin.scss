@@ -1,0 +1,7 @@
+@mixin input ($width, $padding, $border, $border-radius, $box-shadow) {
+    width: $width;
+    padding: $padding;
+    border: $border;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}

@@ -1,0 +1,55 @@
+footer {
+    grid-area: footer;
+    color: white;
+    background-image: url(../img/tattoo4.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 1%;
+    margin-bottom: -2%;
+
+    .logoFooter {
+        display: none;
+    }
+
+    p {
+        color: #fff;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        text-decoration-color: #fff;
+        color: #fff;
+    }
+
+    .columna {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "columna2 columna2 columna2 columna2";
+        background-color: rgba(0, 0, 0, .4);
+
+        .columna1 {
+            display: none;
+        }
+
+        .columna2 {
+            grid-area: columna2;
+            padding: 2%;
+        }
+
+        .columna3 {
+            display: none;
+        }
+    }
+
+    h4,
+    h5 {
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: lighter;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        color: #fff;
+        background-color: black;
+    }
+}

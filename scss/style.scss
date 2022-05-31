@@ -1,0 +1,119 @@
+@import "utilities/variables";
+@import "utilities/mixin";
+@import "utilities/maps";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bodyIndex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+.mainNosotros {
+    grid-area: main;
+
+    .cuerpo {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: "cero cero cero cero"
+            "nos nos nos nos"
+            "foto foto foto foto"
+            "consejos consejos consejos consejos";
+
+        .cero {
+            grid-area: cero;
+            background-image: url(../img/tattoo1.jpg);
+            background-size: cover;
+            padding: 6vh 0;
+            display: flex;
+            align-items: center;
+
+            .uno {
+                color: #fff;
+                text-align: center;
+                width: 100%;
+                padding: 4%;
+                line-height: 1;
+                background-color: $color-principal;
+
+                h1 {
+                    font-size: 1.5rem;
+                    font-weight: 100;
+                }
+
+                .dos {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid;
+                    margin-top: 1rem;
+                    padding: 10px 30px;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    background-color: $color-principal;
+                    cursor: pointer;
+                    border-color: #fff;
+                    color: #fff;
+                }
+            }
+
+        }
+
+    }
+}
+
+.social {
+    display: none;
+}
+
+.artistas {
+    flex-wrap: wrap;
+    .nosotros {
+        grid-area: nos;
+        background-color: $color-secundario;
+        color: #fff;
+        padding: 2.5rem 1rem;
+        h2 span {
+            display: none;
+        }
+        .nosotrosTexto {
+            margin-top: 0.5rem;
+            .nosotrosPc {
+                display: none;
+            }
+        }
+        .nosotrosCel {
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+.consejos {
+    grid-area: consejos;
+    background-color: $color-secundario;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    p {
+        margin-top: 0.5rem;
+    }
+}
+
+
+@import "footer";
+@import "contacto";
+@import "mediaqueries";
