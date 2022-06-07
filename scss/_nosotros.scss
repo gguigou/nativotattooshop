@@ -1,4 +1,7 @@
 .mainNosotros {
+    .nosotros{
+        @extend .consejos;
+    }
     .fotoNosotros {
         grid-area: foto;
         width: 100%;

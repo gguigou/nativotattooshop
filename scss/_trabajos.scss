@@ -16,6 +16,9 @@ header {
 
 main {
     grid-area: mainT;
+    .trabajos{
+        @extend .consejos;
+    }
     .TattooPics {
         display: flex;
         justify-content: center;

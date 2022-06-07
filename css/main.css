@@ -71,12 +71,12 @@ header {
     .artistas .nosotros .nosotrosCel {
       margin-top: 0.5rem; }
 
-.consejos {
+.consejos, .contacto .preguntas, .mainNosotros .nosotros, main .trabajos {
   grid-area: consejos;
   background-color: rgba(0, 0, 0, 0.925);
   color: #fff;
   padding: 1.5rem 1rem; }
-  .consejos p {
+  .consejos p, .contacto .preguntas p, .mainNosotros .nosotros p, main .trabajos p {
     margin-top: 0.5rem; }
 
 footer {
@@ -195,10 +195,10 @@ footer {
       grid-area: gera; }
     #fotoTatuadores #tatuador4 {
       grid-area: cami; }
-  .consejos h2 {
+  .consejos h2, .contacto .preguntas h2, .mainNosotros .nosotros h2, main .trabajos h2 {
     text-align: center;
     font-size: 1.8rem; }
-  .consejos p {
+  .consejos p, .contacto .preguntas p, .mainNosotros .nosotros p, main .trabajos p {
     padding: 2% 4%; }
   .contacto h1 {
     display: none; }
@@ -285,7 +285,7 @@ footer {
     display: block; }
   .tatuadores figcaption {
     font-size: 1.5rem; }
-  .consejos p {
+  .consejos p, .contacto .preguntas p, .mainNosotros .nosotros p, main .trabajos p {
     font-size: 1.5rem; }
   /*footer*/
   footer {
