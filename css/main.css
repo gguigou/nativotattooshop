@@ -108,6 +108,7 @@ footer {
       padding: 2%; }
     footer .columna .columna3 {
       display: none; }
+  footer h3,
   footer h4,
   footer h5 {
     text-align: center;
@@ -161,6 +162,11 @@ footer {
   width: 100%;
   margin-top: 1rem; }
 
+.contacto .preguntas details summary {
+  margin-left: 2.5rem;
+  padding: 1.5rem 1rem;
+  font-size: 1.5rem; }
+
 @media screen and (min-width: 720px) {
   .cuerpo .cero .uno h1 {
     font-size: 2.5rem; }
@@ -195,13 +201,19 @@ footer {
       grid-area: gera; }
     #fotoTatuadores #tatuador4 {
       grid-area: cami; }
-  .consejos h2, .contacto .preguntas h2, .mainNosotros .nosotros h2, main .trabajos h2 {
+  .consejos h1, .contacto .preguntas h1, .mainNosotros .nosotros h1, main .trabajos h1,
+  .consejos h2,
+  .contacto .preguntas h2,
+  .mainNosotros .nosotros h2,
+  main .trabajos h2,
+  .consejos h3,
+  .contacto .preguntas h3,
+  .mainNosotros .nosotros h3,
+  main .trabajos h3 {
     text-align: center;
     font-size: 1.8rem; }
   .consejos p, .contacto .preguntas p, .mainNosotros .nosotros p, main .trabajos p {
     padding: 2% 4%; }
-  .contacto h1 {
-    display: none; }
   .formulario {
     display: flex;
     flex-direction: wrap;
@@ -363,6 +375,8 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
+    main .TattooPics h2 {
+      margin-top: 5%; }
     main .TattooPics .container-tattoo {
       display: flex;
       flex-wrap: wrap;

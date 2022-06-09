@@ -16,14 +16,21 @@ header {
 
 main {
     grid-area: mainT;
-    .trabajos{
+
+    .trabajos {
         @extend .consejos;
     }
+
     .TattooPics {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
+        h2 {
+            margin-top: 5%;
+        }
+
         .container-tattoo {
             display: flex;
             flex-wrap: wrap;
@@ -31,6 +38,7 @@ main {
             align-items: center;
             gap: 20px;
             margin: 5%;
+
             .cardTatt {
                 border: 1px solid black;
                 width: 20rem;
@@ -38,8 +46,10 @@ main {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
                 img {
                     width: 100%;
+
                     &:hover {
                         transform: scale(1.1);
                     }

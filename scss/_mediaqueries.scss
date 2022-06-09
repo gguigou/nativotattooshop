@@ -73,7 +73,9 @@
 
 
     .consejos {
-        h2 {
+        h1,
+        h2,
+        h3 {
             text-align: center;
             font-size: 1.8rem;
         }
@@ -86,9 +88,7 @@
 
     // contacto html
 
-    .contacto h1 {
-        display: none;
-    }
+
 
     .formulario {
         display: flex;

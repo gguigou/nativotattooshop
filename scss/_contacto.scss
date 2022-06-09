@@ -42,6 +42,13 @@
 
     .preguntas{
         @extend .consejos;
+        details {
+            summary {
+                margin-left: 2.5rem;
+                padding: 1.5rem 1rem;
+                font-size: 1.5rem;
+            }
+        }
     }
 }
     
