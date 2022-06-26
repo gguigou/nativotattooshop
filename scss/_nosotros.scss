@@ -1,7 +1,8 @@
 .mainNosotros {
-    .nosotros{
+    .nosotros {
         @extend .consejos;
     }
+
     .fotoNosotros {
         grid-area: foto;
         width: 100%;
@@ -20,5 +21,9 @@
             }
 
         }
+    }
+
+    .cuidados {
+        @extend .consejos
     }
 }

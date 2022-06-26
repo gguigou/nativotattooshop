@@ -71,12 +71,12 @@ header {
     .artistas .nosotros .nosotrosCel {
       margin-top: 0.5rem; }
 
-.consejos, .contacto .preguntas, .mainNosotros .nosotros, main .trabajos {
+.consejos, .contacto .preguntas, .mainNosotros .nosotros, .mainNosotros .cuidados, main .trabajos {
   grid-area: consejos;
   background-color: rgba(0, 0, 0, 0.925);
   color: #fff;
   padding: 1.5rem 1rem; }
-  .consejos p, .contacto .preguntas p, .mainNosotros .nosotros p, main .trabajos p {
+  .consejos p, .contacto .preguntas p, .mainNosotros .nosotros p, .mainNosotros .cuidados p, main .trabajos p {
     margin-top: 0.5rem; }
 
 footer {
@@ -201,18 +201,20 @@ footer {
       grid-area: gera; }
     #fotoTatuadores #tatuador4 {
       grid-area: cami; }
-  .consejos h1, .contacto .preguntas h1, .mainNosotros .nosotros h1, main .trabajos h1,
+  .consejos h1, .contacto .preguntas h1, .mainNosotros .nosotros h1, .mainNosotros .cuidados h1, main .trabajos h1,
   .consejos h2,
   .contacto .preguntas h2,
   .mainNosotros .nosotros h2,
+  .mainNosotros .cuidados h2,
   main .trabajos h2,
   .consejos h3,
   .contacto .preguntas h3,
   .mainNosotros .nosotros h3,
+  .mainNosotros .cuidados h3,
   main .trabajos h3 {
     text-align: center;
     font-size: 1.8rem; }
-  .consejos p, .contacto .preguntas p, .mainNosotros .nosotros p, main .trabajos p {
+  .consejos p, .contacto .preguntas p, .mainNosotros .nosotros p, .mainNosotros .cuidados p, main .trabajos p {
     padding: 2% 4%; }
   .formulario {
     display: flex;
@@ -297,7 +299,7 @@ footer {
     display: block; }
   .tatuadores figcaption {
     font-size: 1.5rem; }
-  .consejos p, .contacto .preguntas p, .mainNosotros .nosotros p, main .trabajos p {
+  .consejos p, .contacto .preguntas p, .mainNosotros .nosotros p, .mainNosotros .cuidados p, main .trabajos p {
     font-size: 1.5rem; }
   /*footer*/
   footer {
@@ -334,15 +336,15 @@ footer {
           border: 0;
           box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.06);
           border-radius: 10px; }
-          footer .columna .columna3 input [type=submit] {
-            padding: 0.5rem;
-            width: 19.5rem;
-            border: 0;
-            box-shadow: 0 0 15px 5px rgba(49, 46, 46, 0.06);
-            border-radius: 10px; }
-            footer .columna .columna3 input [type=submit]:hover {
-              background-color: #301B3F;
-              color: #fff; } }
+        footer .columna .columna3 input[type=submit] {
+          padding: 0.5rem;
+          width: 19.5rem;
+          border: 0;
+          box-shadow: 0 0 15px 5px rgba(49, 46, 46, 0.06);
+          border-radius: 10px; }
+          footer .columna .columna3 input[type=submit]:hover {
+            background-color: #301B3F;
+            color: #fff; } }
 
 .mainNosotros .fotoNosotros {
   grid-area: foto;

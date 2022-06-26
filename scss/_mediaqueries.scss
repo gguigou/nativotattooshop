@@ -73,6 +73,7 @@
 
 
     .consejos {
+
         h1,
         h2,
         h3 {
@@ -250,7 +251,7 @@
     /*foto tatuadores*/
 
     #fotoTatuadores {
-        display: block;   
+        display: block;
     }
 
     .tatuadores figcaption {
@@ -313,17 +314,18 @@
                     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.06);
                     border-radius: 10px;
 
-                    [type=submit] {
-                        padding: 0.5rem;
-                        width: 19.5rem;
-                        border: 0;
-                        box-shadow: 0 0 15px 5px rgba(49, 46, 46, 0.06);
-                        border-radius: 10px;
+                }
 
-                        &:hover {
-                            background-color: #301B3F;
-                            color: #fff;
-                        }
+                input[type=submit] {
+                    padding: 0.5rem;
+                    width: 19.5rem;
+                    border: 0;
+                    box-shadow: 0 0 15px 5px rgba(49, 46, 46, 0.06);
+                    border-radius: 10px;
+
+                    &:hover {
+                        background-color: #301B3F;
+                        color: #fff;
                     }
                 }
             }
